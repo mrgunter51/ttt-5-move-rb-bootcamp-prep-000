@@ -12,6 +12,7 @@ index = input_to_index(input)
 while (index < 1 || index > 9) do
   puts "Invalid Move! Try again."
   input = gets.strip
+  index = input_to_index(input)
 end
 
 move(board,index)
