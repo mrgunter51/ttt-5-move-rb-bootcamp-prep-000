@@ -9,7 +9,7 @@ puts "Where would you like to go? (1-9)"
 input = gets.strip
 index = input_to_index(input)
 
-until (index < 1 || index > 9) do
+while (index < 1 || index > 9) do
   puts "Invalid Move! Try again."
   input = gets.strip
 end
