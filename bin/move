@@ -10,7 +10,7 @@ input = gets.strip
 index = input_to_index(input)
 
 while (index < 0 || index > 8) do
-  puts "Invalid Move! Try again."
+  puts "Invalid Move! Try again. (1-9)"
   input = gets.strip
   index = input_to_index(input)
 end
