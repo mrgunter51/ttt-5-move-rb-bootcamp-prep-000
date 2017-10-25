@@ -7,7 +7,7 @@ board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
 puts "Where would you like to go? (1-9)"
 input = gets.strip
 index = input_to_index(input)
-if(index < 1 || index > 9)
+until (index < 1 || index > 9)
   puts "Invalid Move! Try again."
   input = gets.strip
 else
