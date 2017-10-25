@@ -10,7 +10,7 @@ index = input_to_index(input)
 until (index < 1 || index > 9) do
   puts "Invalid Move! Try again."
   input = gets.strip
-else
-  move(board,index)
-  display_board(board)
 end
+
+move(board,index)
+display_board(board)
