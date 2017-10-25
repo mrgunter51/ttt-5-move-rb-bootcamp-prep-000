@@ -4,8 +4,10 @@ require_relative '../lib/move.rb'
 
 puts "Welcome to Tic Tac Toe!"
 board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
-puts "Where would you like to go?"
+puts "Where would you like to go? (1-9)"
 input = gets.strip
+if(input < 1 || input > 9)
+  puts "Invalid Move!"
 index = input_to_index(input)
 move(board,index)
 display_board(board)
