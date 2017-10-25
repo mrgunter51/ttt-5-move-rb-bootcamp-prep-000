@@ -6,11 +6,11 @@ puts "Welcome to Tic Tac Toe!"
 board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
 puts "Where would you like to go? (1-9)"
 input = gets.strip
-if(input < 1 || input > 9)
+index = input_to_index(input)
+if(index < 1 || index > 9)
   puts "Invalid Move! Try again."
   input = gets.strip
 else
-  index = input_to_index(input)
   move(board,index)
   display_board(board)
 end
